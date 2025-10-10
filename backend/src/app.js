@@ -5,7 +5,24 @@ import cors from 'cors'
 
 const app = express()
 app.use(bodyParser.json())
-app.use(cors())
+
+//app.use(cors()) THIS IS THE OLD CODE, THE OTHER COMMENT SECTIONS ARE NEW
+
+app.use(
+  cors({
+    origin: 'https://blog-frontend-335463930887.us-west3.run.app',
+    credentials: true,
+  }),
+)
+
+// ensure preflight requests are handled
+app.options(
+  '*',
+  cors({
+    origin: 'https://blog-frontend-335463930887.us-west3.run.app',
+    credentials: true,
+  }),
+)
 
 postsRoutes(app)
 
