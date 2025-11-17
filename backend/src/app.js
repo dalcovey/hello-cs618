@@ -7,8 +7,9 @@ import cors from 'cors'
 const app = express()
 app.use(bodyParser.json())
 
-//app.use(cors()) THIS IS THE OLD CODE, THE OTHER COMMENT SECTIONS ARE NEW
+app.use(cors())
 
+/* TRY FOR CLOUD HOSTING CORS ISSUES
 app.use(
   cors({
     origin: 'https://blog-frontend-335463930887.us-west3.run.app',
@@ -24,6 +25,7 @@ app.options(
     credentials: true,
   }),
 )
+*/
 
 postsRoutes(app)
 userRoutes(app)
