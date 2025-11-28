@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://symmetrical-enigma-4jggg9g56g7v2754j-5173.app.github.dev/sitemap.xml
