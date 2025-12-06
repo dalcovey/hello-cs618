@@ -1,0 +1,4 @@
+{
+  "schema": "https://symmetrical-enigma-4jggg9g56g7v2754j-3001.app.github.dev/graphql",
+  "documents": "src/api/graphql/**/*.{js,jsx}"
+}
